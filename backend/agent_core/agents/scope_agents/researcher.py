@@ -1,5 +1,5 @@
 from colorama import Fore, Style
-from utils.views import print_agent_output
+from ...utils.views import print_agent_output
 from typing import Dict, List, Any
 import asyncio
 from langchain_core.messages import AIMessage, HumanMessage
@@ -7,6 +7,8 @@ from langchain_core.tools import tool
 from langgraph.graph import StateGraph, MessagesState, START, END
 from langgraph.prebuilt import ToolNode
 import PyPDF2
+from ...models import llm
+
 
 class ResearchAgent:
     def __init__(self, websocket=None, stream_output=None, tone=None, headers=None):

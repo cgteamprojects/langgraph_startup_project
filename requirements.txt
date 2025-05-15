@@ -1,0 +1,11 @@
+
+colorama
+
+langchain_core
+langchain_community
+langgraph
+langchain_openai
+
+json5
+json_repair
+ipython

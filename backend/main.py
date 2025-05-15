@@ -17,7 +17,8 @@ def open_task():
     # Get the directory of the current script
     current_dir = os.path.dirname(os.path.dirname(os.path.realpath('__file__')))
     # Construct the absolute path to task.json
-    task_json_path = os.path.join(current_dir, 'jupyter/task.json')
+    print(current_dir)
+    task_json_path = os.path.join(current_dir, './backend/agent_core/agents/scope_agents/task.json')
     
     with open(task_json_path, 'r') as f:
         task = json.load(f)
