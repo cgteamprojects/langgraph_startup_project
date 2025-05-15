@@ -1,0 +1,33 @@
+{
+    "query": "Write an Audit Scope?",
+    "max_sections": 3,
+    "publish_formats": {
+      "markdown": true,
+      "pdf": true,
+      "docx": true
+    },
+    "include_human_feedback": false,
+    "follow_guidelines": true,
+    "model": "gpt-4o",
+    "guidelines": [
+      "The report MUST be written in APA format",
+      "Each sub section MUST include supporting sources using hyperlinks. If none exist, erase the sub section or rewrite it to be a part of the previous section",
+      "The report MUST be written in Farsi"
+    ],
+    "sections": [
+      {
+        "title": "Auditable area's Background, Strategy, Objectives, Governance",
+        "description": [
+          "Business / program or process audited, significance to ANZ, including Strategy",
+          "Product / Service offering, volumes, business plans, key indicators /scorecards",
+          "Governance: model, organizational structure, people metrics (if any)",
+          "Key policies and procedures",
+          "Risk and controls profile: known control testing outcomes, customer complaints and QA/monitoring activities, significant incidents",
+          "Recent key changes in the area"
+        ],
+        "note": "You can cross-reference to the risk assessment description if appropriate."
+      }
+     
+    ],
+    "verbose": true
+  }
